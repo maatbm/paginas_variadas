@@ -1,0 +1,87 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    overflow-x: hidden;
+    font-family: "Noto Sans", sans-serif;
+}
+#container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#left > h1{
+    color: #77ffc0;
+}
+img{
+    width: 65%;
+    height: auto;
+}
+#right{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    width: 80%;
+    height: auto;
+    background-color: #2f2841;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: black solid 3px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.redirect{
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: black solid 2px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.btn{
+    width: 50%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 7px;
+    background-color: #00ff88;
+    border: #201b2c solid 2px;
+    border-radius: 5px;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-color: #016e3b;
+}
+h3{
+    margin: 0;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+#card > h1{
+    color:  #00ff88;
+    font-weight: 800;
+}

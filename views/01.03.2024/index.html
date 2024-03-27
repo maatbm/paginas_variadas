@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <title> MBM | Crie seu cofre personalizado</title>
+    </head>
+    <body>
+        <main id="container">
+            <div class="title1_div">
+                <h1 id="title1"> MBM | Cofres Personalizados</h1>
+            </div>
+            <div class="title1_div">
+                <h2 id="lab">Crie seu cofre de acordo com suas necessidades, tudo é personalizável, desde o material externo até a forração interna!</h2>
+            </div>
+            <div class="form_div">
+                <form id="data_form" method="post">
+                    <div class="div_input">
+                        <h3>Insira seu nome completo</h3>
+                        <input type="text" id="name_input" class="input_text">
+                    </div>
+                    <div class="div_input">
+                        <h3>Insira seu endereço (rua, nº, bairro, cidade e estado)</h3>
+                        <input type="text" id="adress_input" class="input_text">
+                    </div>
+                    <div class="div_input">
+                        <h3>Crie uma senha para o seu cofre</h3>
+                        <input type="password" id="pass_input" class="input_text">
+                    </div>
+                    <div class="div_input">
+                        <h3>Qual o tipo de senha que você inseriu?</h3>
+                        <input type="radio" name="pass_type" id="pass_type">
+                        <h3 class="radio_options">Numérica</h3>
+                        <input type="radio" name="pass_type" id="pass_type">
+                        <h3 class="radio_options">Caractéres</h3>
+                        <input type="radio" name="pass_type" id="pass_type">
+                        <h3 class="radio_options">Misto (letras e números)</h3>
+                    </div>
+                    <div class="div_input">
+                        <h3>Deseja que seu cofre possua leitor de biometria?</h3>
+                        <input type="radio" name="biometria" id="biometria" class="input_radio">
+                        <h3 class="radio_options">Sim</h3>
+                        <input type="radio" name="biometria" id="biometria" class="input_radio"> 
+                        <h3 class="radio_options">Não</h3>
+                    </div>
+                    <div class="div_column_input">
+                        <div class="div_input2"> 
+                            <h3>Materiais da carcaça externa</h3>
+                            <h5>(Possível escolher mais de 1)</h5>
+                            <ol type="I" class="radio_options">
+                                <li><input type="checkbox" name="ext" id="ext">Aço de alta resistência</li>
+                                <li><input type="checkbox" name="ext" id="ext">Concreto reforçado</li>
+                                <li><input type="checkbox" name="ext" id="ext">Cerâmica balística</li>
+                                <li><input type="checkbox" name="ext" id="ext">Liga titânio/tungstênio</li>
+                                <li><input type="checkbox" name="ext" id="ext">Aço inoxidável</li>
+                                <li><input type="checkbox" name="ext" id="ext">Aço cromado</li>
+                                <li><input type="checkbox" name="ext" id="ext">Alumínio de alta resistência</li>
+                                <li><input type="checkbox" name="ext" id="ext">Bronze</li>
+                                <li><input type="checkbox" name="ext" id="ext">Latão</li>
+                            </ol>
+                        </div>
+                        <div class="div_input2">
+                            <h3>Materiais do forro interno</h3>
+                            <h5>(Possível escolher mais de 1)</h5>
+                            <ol type="I" class="radio_options">
+                                <li><input type="checkbox" name="int" id="int">Veludo</li>
+                                <li><input type="checkbox" name="int" id="int">Feltro</li>
+                                <li><input type="checkbox" name="int" id="int">Camurça</li>
+                                <li><input type="checkbox" name="int" id="int">Espuma de poliuretano</li>
+                                <li><input type="checkbox" name="int" id="int">Fibras de vidro</li>
+                                <li><input type="checkbox" name="int" id="int">Tecido de microfibra</li>
+                                <li><input type="checkbox" name="int" id="int">Material emborrachado</li>
+                                <li><input type="checkbox" name="int" id="int">Aramida</li>
+                                <li><input type="checkbox" name="int" id="int">Espuma de EVA</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="div_input">
+                        <h3>Escolha o tamanho do seu cofre (m = metros) (altura x largura x profundidade)</h3>
+                        <select>
+                            <option>1m x 1m x 1m</option>
+                            <option>0.4m x 1m x 0.7m</option>
+                            <option>1.7m x 2m x 2m</option>
+                            <option>0.8m x 1.2m x 0.8m</option>
+                            <option>1m x 1m x 2m</option>
+                            <option>1.8m x 1.5m x 2.6m</option>
+                            <option>0.8m x 1m x 3m</option>
+                            <option>1.5m x 1m 2.5m</option>
+                        </select>
+                    </div>
+                    <div class="div_column_input">
+                        <div class="div_input3">
+                            <h3>Observações ou informações adicionais que achar importante</h3>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="div_column_input">
+                        <input type="reset" value="Limpar escolhas" class="button">
+                        <input type="submit" value="Finalizar e enviar" class="button" onclick="end()">
+                    </div>
+                </form>
+            </div>        
+            <div  class="div_column_input">
+                <button id="scroll_to_top" onclick="scroll_to_top()" class="button2">Voltar ao início da página</button>
+            </div>
+        </main>
+    </body>
+</html>
